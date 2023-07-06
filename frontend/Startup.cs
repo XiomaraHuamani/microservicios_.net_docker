@@ -33,7 +33,16 @@ namespace frontend
                 client.BaseAddress = baseAddress;
             });
 
+            services.AddHttpClient<DoctorClient>(client => 
+            {
+                var baseAddress = new Uri(Configuration.GetValue<string>("backendUrl"));
+
+                client.BaseAddress = baseAddress;
+            });
+
         }
+
+        
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

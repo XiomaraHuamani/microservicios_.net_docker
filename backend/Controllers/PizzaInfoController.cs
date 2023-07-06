@@ -31,10 +31,10 @@ namespace backend.Controllers
             _logger = logger;
         }
 
-         [HttpGet]
-         public IEnumerable<PizzaInfo> Get()
-         {
-             return TheMenu;
-         }
+        [HttpGet]
+        public IEnumerable<PizzaInfo> Get()
+        {
+            return TheMenu;
+        }
     }
 }

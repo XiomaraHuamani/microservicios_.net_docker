@@ -3,30 +3,23 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - frontend</title>
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">frontend</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <nav class="nav container">
+            <h2 class="nav_logo"><a href="#">Clinica XD</a></h2>
+            <ul class="menu_items">
+            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a asp-area=""  asp-action="/Index">Inicio</a></li>
+            <li><a asp-area=""  asp-action="/Doctores">Docotres</a></li>  
+            <li><a href="#" class="nav_link">Procedimientos</a></li>
+            <li><a href="#" class="nav_link">Especialidades</a></li>
+            <li><a href="#" class="nav_link" >Contactanos</a></li>
+            </ul>
+            <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
         </nav>
     </header>
     <div class="container">

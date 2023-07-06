@@ -1,39 +1,78 @@
 @page
 @model IndexModel
 @{
-    ViewData["Title"] = ".NET Pizza Co.";
+   ViewData["Title"] = "Clinica XD";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/cards.css" />
+    <script src="~/js/site.js"  defer></script>
 
-<div class="text-center">
-    <h1 class="display-4">Let's Eat Some Pizza!</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
 
-Our pizzas are hot, hot, hot!!
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <div class="row">
+                <div class="column">
+                    <h2>¡Bienvenidos a nuestra clínica,  <br />donde tu salud es nuestra prioridad número uno!</h2>
+                    <p>En nuestra página web, encontrarás una experiencia de atención médica excepcional, diseñada pensando en ti y en tus necesidades. Estamos comprometidos en brindarte los mejores servicios médicos y cuidados de calidad, 
+                        respaldados por un equipo de profesionales altamente capacitados y apasionados por su trabajo.</p>
+                    <div class="buttons">
+                        <button class="btn">Inicia sesión</button>
+                        <button class="btn">Regístrate</button>
+                    </div>
+                </div>
+                <div class="column hero__imgggg">
+                    <img src="images/hospital.png" alt="heroImg" class="hero_img" />
+                </div>
+            </div>
+        </section>
+        <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
+    </main>
 
-<div style="color: #D8000C; background-color: #FFBABA">
-  @Model.ErrorMessage
-</div> 
-
-<table class="table">
-   <thead>
-      <tr>
-         <th>Pizza Name</th>
-         <th>Ingredients</th>
-         <th>Cost</th>
-         <th>In Stock</th>
-      </tr>
-   </thead>
-   <tbody>
-      @foreach (var pizza in @Model.Pizzas)
-      {
-         <tr>
-            <td>@pizza.PizzaName</td>
-            <td>@pizza.Ingredients</td>
-            <td>$@pizza.Cost</td>
-            <td>@pizza.InStock</td>
-         </tr>
-      }
-   </tbody>
-</table>
+    <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+            <li class="card">
+                <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
+                <h2>Blanche Pearson</h2>
+                <span>Sales Manager</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="images/img-2.jpg" alt="img" draggable="false"></div>
+                <h2>Joenas Brauers</h2>
+                <span>Web Developer</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="images/img-3.jpg" alt="img" draggable="false"></div>
+                <h2>Lariach French</h2>
+                <span>Online Teacher</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="images/img-4.jpg" alt="img" draggable="false"></div>
+                <h2>James Khosravi</h2>
+                <span>Freelancer</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="images/img-5.jpg" alt="img" draggable="false"></div>
+                <h2>Kristina Zasiadko</h2>
+                <span>Bank Manager</span>
+            </li>
+            <li class="card">
+                <div class="img"><img src="images/img-6.jpg" alt="img" draggable="false"></div>
+                <h2>Donald Horton</h2>
+                <span>App Designer</span>
+            </li>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+</body>
+</html>
 
