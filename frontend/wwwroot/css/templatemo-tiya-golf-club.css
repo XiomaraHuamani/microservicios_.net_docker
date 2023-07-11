@@ -13,7 +13,7 @@ https://templatemo.com/tm-587-tiya-golf-club
 :root {
   --white-color:                  #ffffff;
   --primary-color:                #81B29A;
-  --secondary-color:              #3D405B;
+  --secondary-color:              #1d7f9c;
   --section-bg-color:             #F4F1DE;
   --custom-btn-bg-color:          #F2CC8F;
   --custom-btn-bg-hover-color:    #E07A5F;
@@ -144,7 +144,7 @@ strong {
 
 .section-overlay {
   content: "";
-  background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.01) 0%, rgb(39, 48, 83) 100%) repeat scroll 0% 0%;
+  background: #00000000 linear-gradient(#1d7f9c 30%, #273053 100%) repeat scroll 0% 0%;
   position: absolute;
   top: 0;
   right: 0;
@@ -438,7 +438,7 @@ strong {
 }
 
 .sticky-wrapper.is-sticky .navbar {
-  background-color: rgb(61 64 91);
+  background-color: #1d7f9c;
 }
 
 .navbar {
@@ -643,7 +643,8 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('../images/anna-rosar-ZxFyVBHMK-c-unsplash.jpg');
+  /* background-image: url('../images/anna-rosar-ZxFyVBHMK-c-unsplash.jpg'); */
+  background-color: #1d7f9c;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
